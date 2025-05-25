@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFit - Healthy Meal Planning</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: #2E7D32;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #333;
+            font-weight: 500;
+            padding: 15px 0;
+            display: block;
+            position: relative;
+            text-decoration: none;
+        }
+        
+        nav ul li a.active {
+            color: #4CAF50;
+        }
+        
+        nav ul li a.active:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #4CAF50;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1B5E20;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #757575;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #F1F8E9;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            header .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .hero {
+                flex-direction: row;
+                text-align: left;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .hero-content {
+                width: 50%;
+            }
+            
+            .hero-image {
+                width: 45%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">StayFit</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="post.html">Post Recipe</a></li>
+                    <li><a href="recipe-maker.html">Recipe Maker</a></li>
+                    <li><a href="meal-plan.html">Meal Plan</a></li>
+                    <li><a href="user-details.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Plan, prep, and plate your perfect meals — all in one place.</h2>
+                <p>Your personalized nutrition assistant for healthier eating habits.</p>
+                <a href="user-details.html" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                     alt="Healthy food" 
+                     style="width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Discover Recipes</h3>
+                <p>Browse thousands of healthy recipes tailored to your preferences.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Create Meal Plans</h3>
+                <p>Generate weekly meal plans based on your dietary needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smart Suggestions</h3>
+                <p>Get recipe ideas based on ingredients you already have.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 StayFit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <!-- Chatbot Widget -->
+<div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <div id="chatbot-header" style="background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px 10px 0 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 300px;">
+        <span style="font-weight: bold;">Nutri - Your Nutrition Assistant</span>
+        <span id="chatbot-toggle" style="font-size: 20px;">−</span>
+    </div>
+    <div id="chatbot-body" style="display: none; height: 400px; background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 10px 10px; flex-direction: column;">
+        <div id="chatbot-messages" style="flex: 1; padding: 15px; overflow-y: auto; height: 300px;">
+            <div style="background: #f1f1f1; padding: 10px; border-radius: 5px; margin-bottom: 10px; max-width: 80%;">
+                <strong>Nutri:</strong> Hello! I'm Nutri, your 24/7 nutrition assistant. How can I help you today?
+            </div>
+        </div>
+        <div style="padding: 15px; border-top: 1px solid #eee; display: flex;">
+            <input type="text" id="chatbot-input" placeholder="Type your question..." style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px 0 0 4px;">
+            <button id="chatbot-send" style="background-color: #4CAF50; color: white; border: none; padding: 10px 15px; border-radius: 0 4px 4px 0; cursor: pointer;">Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/chatbot.js"></script>
+    </body>
+</html>

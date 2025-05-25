@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile | StayFit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">StayFit</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="explore.html" >Explore</a></li>
+                    <li><a href="post.html">Post Recipe</a></li>
+                    <li><a href="recipe-maker.html">Recipe Maker</a></li>
+                    <li><a href="meal-plan.html">Meal Plan</a></li>
+                    <li><a href="user-details.html">Profile</a></li>     
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="user-profile">
+            <h2>Your Profile</h2>
+            <p>Complete your profile to get personalized recipe recommendations.</p>
+            
+            <form id="user-details-form">
+                <div class="form-group">
+                    <label for="user-age">Age</label>
+                    <input type="number" id="user-age" min="1" max="120">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-diet">Diet Type</label>
+                    <select id="user-diet">
+                        <option value="omnivore">Omnivore</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="pescatarian">Pescatarian</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-allergies">Allergies (comma separated)</label>
+                    <input type="text" id="user-allergies" placeholder="e.g., peanuts, shellfish">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-intolerances">Intolerances (comma separated)</label>
+                    <input type="text" id="user-intolerances" placeholder="e.g., lactose, gluten">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-conditions">Medical Conditions (comma separated)</label>
+                    <input type="text" id="user-conditions" placeholder="e.g., diabetes, PCOS">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-cuisines">Preferred Cuisines (comma separated)</label>
+                    <input type="text" id="user-cuisines" placeholder="e.g., Italian, Indian, Mexican">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-goals">Health Goals</label>
+                    <select id="user-goals">
+                        <option value="maintain">Maintain Weight</option>
+                        <option value="lose">Lose Weight</option>
+                        <option value="gain">Gain Weight</option>
+                        <option value="muscle">Build Muscle</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn">Save Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 StayFit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/user-details.js"></script>
+</body>
+</html>

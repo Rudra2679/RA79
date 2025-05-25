@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner | StayFit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">StayFit</h1>
+            <nav>
+                <ul>
+                   <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="post.html">Post Recipe</a></li>
+                    <li><a href="recipe-maker.html">Recipe Maker</a></li>
+                    <li><a href="meal-plan.html">Meal Plan</a></li>
+                    <li><a href="user-details.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="meal-planner">
+            <h2>Your Personalized Meal Plan</h2>
+            
+            <div class="plan-options">
+                <div class="form-group">
+                    <label for="plan-duration">Plan Duration</label>
+                    <select id="plan-duration">
+                        <option value="7">1 Week</option>
+                        <option value="14">2 Weeks</option>
+                        <option value="30">1 Month</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget-preference">Budget Preference</label>
+                    <select id="budget-preference">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                
+                <button id="generate-plan" class="btn">Generate Meal Plan</button>
+            </div>
+            
+            <div class="plan-results" id="meal-plan-results">
+                <div class="no-plan">
+                    <p>Click "Generate Meal Plan" to create your personalized meal plan.</p>
+                </div>
+            </div>
+            
+            <div class="plan-actions" id="plan-actions" style="display: none;">
+                <button id="print-plan" class="btn">Print Plan</button>
+                <button id="download-plan" class="btn">Download as PDF</button>
+                <button id="save-plan" class="btn">Save to Profile</button>
+            </div>
+            
+            <div class="shopping-list" id="shopping-list-container" style="display: none;">
+                <h3>Shopping List</h3>
+                <ul id="shopping-list">
+                    <!-- Shopping list items will be added here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 StayFit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/meal-plan.js"></script>
+</body>
+</html>

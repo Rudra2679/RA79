@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Recipe Maker | StayFit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">StayFit</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="post.html">Post Recipe</a></li>
+                    <li><a href="recipe-maker.html">Recipe Maker</a></li>
+                    <li><a href="meal-plan.html">Meal Plan</a></li>
+                    <li><a href="user-details.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="recipe-maker">
+            <h2>Instant Recipe Maker</h2>
+            <p>Enter the ingredients you have, and we'll suggest recipes you can make!</p>
+            
+            <div class="maker-form">
+                <div class="form-group">
+                    <label for="available-ingredients">Ingredients You Have (comma separated)</label>
+                    <textarea id="available-ingredients" rows="3" placeholder="e.g., chicken, rice, tomatoes, onions"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nutrition-focus">Nutritional Focus</label>
+                    <select id="nutrition-focus">
+                        <option value="balanced">Balanced</option>
+                        <option value="high-protein">High Protein</option>
+                        <option value="low-carb">Low Carb</option>
+                        <option value="low-fat">Low Fat</option>
+                        <option value="keto">Keto</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                    </select>
+                </div>
+                
+                <button id="find-recipes" class="btn">Find Recipes</button>
+            </div>
+            
+            <div class="results" id="recipe-results">
+                <!-- Recipe suggestions will appear here -->
+                <div class="no-results">
+                    <p>Enter your ingredients and click "Find Recipes" to see suggestions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 StayFit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/recipe-maker.js"></script>
+</body>
+</html>
